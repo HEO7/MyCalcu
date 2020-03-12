@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="horizontal"
+       android:layout_weight="1"
+       android:weightSum="1">
+
+       <EditText
+           android:id="@+id/giris"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:hint="Enter the Number"
+           android:layout_weight="1"
+           android:inputType="number"/>
+
+
+   </LinearLayout>
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="5">
+       <Button
+           android:id="@+id/btntopla"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_margin="2dp"
+           android:layout_weight="1"
+           android:background="@android:color/holo_blue_bright"
+           android:text="+" />
+       <Button
+           android:id="@+id/btncikar"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_margin="2dp"
+           android:layout_weight="1"
+           android:background="@android:color/holo_blue_bright"
+           android:text="-" />
+       <Button
+           android:id="@+id/btncarp"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_margin="2dp"
+           android:layout_weight="1"
+           android:background="@android:color/holo_blue_bright"
+           android:text="x" />
+       <Button
+           android:id="@+id/btnbol"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_margin="2dp"
+           android:layout_weight="1"
+           android:background="@android:color/holo_blue_bright"
+           android:text="/" />
+       <Button
+           android:id="@+id/btnyuzde"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_margin="2dp"
+           android:layout_weight="1"
+           android:background="@android:color/holo_blue_bright"
+           android:text="%" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnesit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/holo_blue_bright"
+            android:text="=" />
+
+        <EditText
+            android:id="@+id/txtgecmis"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:background="@android:color/darker_gray"
+             android:hint="History"
+            android:gravity="top|center"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btntemizle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/holo_blue_bright"
+            android:text="C\nL\nE\nA\nR" />
+
+
+</LinearLayout>
+
+</LinearLayout>
